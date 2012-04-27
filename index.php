@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Grid</title>
 <link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/designGrid.css">
 </head>
 <body>
 
@@ -72,22 +72,13 @@
 
 <p><small>There's currently a few issues with Opera 11, i haven't looked into what is causing them yet. But this should most likely be addressed in the next release (i hope). PS. I did this project in a day, so everythig is far from perfect.</small></p>
 
-<h2>Inspiration</h2>
-
-<p>Without the effort from following people, this project would most likely not exists. Thanks.</p>
-
-<ul>
-<li><a href="http://gridsetapp.com">Gridset</a></li>
-<li><a href="http://hashgrid.com">#grid</a></li>
-</ul>
-
 </div>
 
 <footer role="contentinfo">
 <small>This project was brought to you by: <a href="http://carlrafting.com">Carl Räfting</a>.</small>
 </footer>
 
-<script src="js/grid.js"></script>
+<script src="js/designGrid.js"></script>
 <script src="js/global.js"></script>
 
 </body>
