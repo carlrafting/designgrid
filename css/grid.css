@@ -1,0 +1,64 @@
+.grid {
+color: #444;
+background: rgba(12, 128, 217, .1);
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+pointer-events: none;
+}
+.columns,
+.baseline {
+width: 42.5em; /*680px*/
+/*width: 90%; Try fluid! */
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+box-sizing: border-box;
+color: rgba(12, 128, 217, .25);
+}
+.columns {
+background: rgba(12, 128, 217, .1);
+border-width: 0 1px;
+border-style: solid;
+}
+.columns small {
+color: rgba(12, 128, 217, .5);
+font-size: 68.75%;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+border-bottom: 1px solid rgba(12, 128, 217, .1);
+display: block;
+padding: .4em;
+text-shadow: rgba(255,255,255, .5) 0 1px 0;
+}
+.l {
+/* 24px baseline */
+height: 1.4375em;
+border-bottom: 1px solid rgba(217, 12, 12, .25);
+}
+.col {
+box-sizing: border-box;
+float: left;
+height: 100%;
+}
+.col {
+width: 21.3%;
+max-width: 100%;
+border: 1px solid;
+border-width: 0 1px;
+margin-right: 3%;
+}
+.col:first-child {
+margin-left: 2.941176470588235%;
+}
+.col:last-child {
+float: right;
+}
+.hide { display: none; }
