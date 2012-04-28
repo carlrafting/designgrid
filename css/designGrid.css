@@ -2,8 +2,11 @@
 color: #444;
 background: rgba(12, 128, 217, .1);
 width: 100%;
-position: fixed;
+height: 100%;
+/*position: fixed;*/
+position: absolute;
 top: 0;
+right: 0;
 left: 0;
 bottom: 0;
 pointer-events: none;
@@ -21,11 +24,12 @@ right: 0;
 bottom: 0;
 box-sizing: border-box;
 color: rgba(12, 128, 217, .25);
+overflow: hidden;
 }
 .columns {
 background: rgba(12, 128, 217, .1);
 border-width: 0 1px;
-border-style: solid;
+border-style: dashed;
 }
 .columns small {
 color: rgba(12, 128, 217, .5);

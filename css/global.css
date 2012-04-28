@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section { display: block; }
 html {
 overflow-y: scroll;
 padding: 0 1.5em;
+position: relative;
 }
 body {
 font: 100%/1.5 "Helvetica Neue", Arial, sans-serif;
