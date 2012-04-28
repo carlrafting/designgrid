@@ -1,5 +1,3 @@
-/*jslint browser: true, sloppy: true, vars: false, white: true, passfail: false, cap: false, on: false, fragment: false, maxerr: 50, indent: 4 */
-
 (function () {
   
   var txtareas = document.getElementsByTagName('textarea'),

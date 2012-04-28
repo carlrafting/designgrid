@@ -1,7 +1,7 @@
 /**
- * TODO: 
- * - Generate columns automagically
- * - Get the container width dynamically
+ * designGrid.js
+ * <url>
+ * <url>
  */
  
 var designGrid = function () {
@@ -12,32 +12,32 @@ var designGrid = function () {
         grid,
         divs,
         baseline,
+        line_height,
         l,
-        columns;
+        columns,
+        len,
+        i;
 
   /**
    * Build html
    */
-
-    // For some reason you can't set className with the other ones above...
+   
     grid = document.createElement('div');
     grid.className = 'grid';
-    
+
     divs =  ['columns', 'baseline'];
+    len = divs.length;
     // Build up divs and assign classnames    
-    for (var i = 0; i < divs.length; i++) {
+    for (i = 0; i < len; i++) {
       var classname = divs[i];
       var d = document.createElement('div');
       d.className = classname;      
       divs[i] = d;
-    };
-    //console.log(divs)
+    }
     divs.forEach(function (el, i, arr) {
-      //console.log(el, i, arr)
       grid.appendChild(el);
     });
     document.body.appendChild(grid);
-    //console.log(grid)
   
     // */
     
@@ -45,19 +45,22 @@ var designGrid = function () {
    * Columns
    */
 
-  baseline = document.getElementsByClassName('baseline')[0],
+  baseline = document.getElementsByClassName('baseline')[0];
   l = document.createElement('div'),
   columns = document.getElementsByClassName('columns')[0];
    
-   (function buildCols() {
+   function buildCols() {
      var output = '';
-     for (var i = 0; i < column_count; i++) {
-       output += '<div class="col"></div>';
+     for (i = 1; i <= column_count; i++) {
+       output += '<div class="col"><small>C' + i + '</small></div>';
      }
-     columns.innerHTML += output;
-   }());
-    
-    
+     columns.innerHTML = output;
+   }
+   
+   buildCols();
+   
+   // */
+       
   /**
    * Baseline stuff
    */
@@ -67,6 +70,7 @@ var designGrid = function () {
     
     // convert string into number
     // NOT USED, REMOVE!
+
     function convertToNum(value) {
       value = value.slice(0, -2); // Strip off px from string.
       value = Number(value);
@@ -74,13 +78,13 @@ var designGrid = function () {
     }
     
     // now it's time to convert the value of line_height to a number
-    //line_height = convertToNum(line_height);
-    var line_height = document.getElementsByClassName('l')[0];
+    // line_height = convertToNum(line_height);
+    line_height = document.getElementsByClassName('l')[0];
     line_height = line_height.offsetHeight;
     
     // divide viewport height with line_height and return the results
     function x() {
-      var result = window.innerHeight / line_height;
+      var result = document.body.clientHeight / line_height;
       return result;
     }
     
@@ -98,21 +102,24 @@ var designGrid = function () {
     
     // build up html for baseline
     function buildLines() {
-      for (var i = 0; i < count; i++) {
-        var html = "";
-        html += '<div class="l"></div>';
-        //console.log(html)
-        baseline.innerHTML += html;
+      var output = "";
+      for (i = 0; i < count; i++) {
+        output += '<div class="l"></div>';
       }
-    };
+      baseline.innerHTML = output;
+    }
     
     buildLines();
+    // */
     
-    //console.log(line_height);
-    grid.classList.add('hide');
-    // Hide/Show grid overlay
+  /**
+   * Hide/Show grid overlay
+   */
+
+    // Hidden by default
+    grid.classList.add('hide'); 
+    
     document.addEventListener('keyup', function (event) {
-      //console.log(event);
       if (event.keyCode === 71) {
         if (!grid.classList.contains('hide')) {
           grid.classList.add('hide');
@@ -122,6 +129,7 @@ var designGrid = function () {
         storestate();
       }
     }, false);
+    // */
     
   /**
    * State functionality
@@ -141,6 +149,8 @@ var designGrid = function () {
     
     // retrieve state on DOMContentLoaded (similar to jQuery's $(document).ready())
     document.addEventListener('DOMContentLoaded', retrievestate, false);  
+      
+    // */
       
   };
   
