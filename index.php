@@ -17,7 +17,7 @@
 
 <h2>History</h2>
 
-<p>designGrid was born to address the need for a tool, that can help you when you're designing websites with fluid grids. Such tool, at the time being doesn't exist, and i needed one now! designGrid is not a grid framework! designGrid is a tool to help you make sure the different elements of your design aligns nicely with the grid. <a href="#">You can read more about the project here</a>.</p>
+<p>designGrid was born to address the need for a tool, that can help you when you're designing websites with fluid grids. Such tool, at the time being doesn't exist, and i needed one now! designGrid is not a grid framework! designGrid is a tool to help you make sure the different elements of your design aligns nicely with the grid. <a href="#">You can read about the background to the project here</a>.</p>
 
 <h2>Usage</h2>
 
@@ -58,6 +58,8 @@
 <code>});</code>
 </code>
 </pre>
+
+<p>You'll also need to change the css so that your columns and gutters uses the right widths. Then you're ready to go!</p>
 
 <h2>Browser support</h2>
 <p>designGrid is tested and is working in the following browsers:</p>
