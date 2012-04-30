@@ -13,7 +13,8 @@ pointer-events: none;
 }
 .columns,
 .baseline {
-width: 42.5em; /*680px*/
+/* You can either go fluid or set a fixed value, preferably ems */
+width: 42.5em; /* 680px */
 /*width: 90%; Try fluid! */
 max-width: 100%;
 margin: auto;
@@ -43,23 +44,23 @@ padding: .4em;
 text-shadow: rgba(255,255,255, .5) 0 1px 0;
 }
 .l {
-/* 24px baseline */
-height: 1.4375em;
 border-bottom: 1px solid rgba(217, 12, 12, .25);
+box-sizing: border-box;
+/* Set your vertical rythm here */
+height: 1.5em; /* 24px */
 }
 .col {
+border: 1px solid;
+border-width: 0 1px;
 box-sizing: border-box;
 float: left;
 height: 100%;
-}
-.col {
+/* Define column width and gutters here */
 width: 21.3%;
-max-width: 100%;
-border: 1px solid;
-border-width: 0 1px;
 margin-right: 3%;
 }
 .col:first-child {
+/* You'll need to set margin-left for the first column too */
 margin-left: 2.941176470588235%;
 }
 .col:last-child {
