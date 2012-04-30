@@ -1,7 +1,7 @@
 /**
  * designGrid.js
  * http://carlrafting.com/designGrid/
- * https://github.com/carlrafting/<project>
+ * https://github.com/carlrafting/designGrid
  */
  
 var designGrid = (function () {

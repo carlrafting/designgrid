@@ -17,11 +17,11 @@
 
 <h2>History</h2>
 
-<p>designGrid was born to address the need for a tool, that can help you when you're designing websites with fluid grids. Such tool, at the time being doesn't exist, and i needed one now! designGrid is not a grid framework! designGrid is a tool to help you make sure the different elements of your design aligns nicely with the grid. <a href="#">You can read about the background to the project here</a>.</p>
+<p>designGrid was born to address the need for a tool, that can help you when you're designing websites with fluid grids. Such tool, at the time being doesn't exist, and i needed one now! designGrid is not a grid framework! designGrid is a tool to help you make sure the different elements of your design aligns nicely with the grid. <a href="http://carlrafting.com/designgrid-a-grid-tool-for-fluid-grids/">You can read about the background to the project here</a>.</p>
 
 <h2>Usage</h2>
 
-<p>designGrid comes with a stylesheet and a javascript file. To get started, <a href="#">dowload the project from GitHub</a>, and then include the files in your project, like this:</p>
+<p>designGrid comes with a stylesheet and a javascript file. To get started, <a href="https://github.com/carlrafting/designGrid">dowload the project from GitHub</a>, and then include the files in your project, like this:</p>
 
 <div>Add this line inside your <code>&lt;head&gt;</code></div>
 <p><code>&lt;link rel="stylesheet" href="path/to/css/designGrid.css"&gt;</code></p>
