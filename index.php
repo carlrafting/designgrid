@@ -50,7 +50,7 @@
 <p>Press <kdb>g</kdb> to toggle the grid on/off.</p>
 
 <h2>Customization</h2>
-<p>By the default there are 4 columns set, you can customize this by setting <code>column_count</code> to whatever value your design require.
+<p>By the default there are 4 columns set, you can customize this by setting <code>column_count</code> to whatever value your design require.</p>
 
 <pre>
 <code>designGrid.init({</code>
