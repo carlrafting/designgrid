@@ -77,6 +77,10 @@ var designGrid = (function () {
     grid.classList.add('hide'); 
     
     document.addEventListener('keyup', function (event) {
+      // Prevent toggling of the grid when typing into form fields
+      if (event.target.form) {
+        return;
+      }
       if (event.keyCode === 71) {
         if (!grid.classList.contains('hide')) {
           grid.classList.add('hide');
