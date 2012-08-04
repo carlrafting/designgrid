@@ -78,7 +78,7 @@ var designGrid = (function () {
     
     document.addEventListener('keyup', function (event) {
       // Prevent toggling of the grid when typing into form fields
-      if (event.target.form) {
+      if (event.target.form || event.target.labels) {
         return;
       }
       if (event.keyCode === 71) {
