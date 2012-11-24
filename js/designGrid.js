@@ -87,12 +87,12 @@ var designGrid = (function () {
         } else {
           grid.classList.remove('hide');
         }
-        designGrid.storestate(grid);
+        storestate(grid);
       }
     }, false);
     
     // retrieve state on DOMContentLoaded (similar to jQuery's $(document).ready())
-    document.addEventListener('DOMContentLoaded', designGrid.retrievestate(grid), false);  
+    document.addEventListener('DOMContentLoaded', retrievestate(grid), false);  
       
   }
   
@@ -112,10 +112,6 @@ var designGrid = (function () {
     }
   }
   
-  return {
-    init: init,
-    retrievestate: retrievestate,
-    storestate: storestate
-  };
+  return { init: init };
 
 }());
