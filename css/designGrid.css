@@ -1,0 +1,79 @@
+.grid {
+color: #444;
+background: rgba(12, 128, 217, .1);
+width: 100%;
+height: 100%;
+/*position: fixed;*/
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+pointer-events: none;
+}
+.columns,
+.baseline {
+/* You can either go fluid or set a fixed value, preferably ems */
+width: 42.5em; /* 680px */
+/*width: 90%; Try fluid! */
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+color: rgba(12, 128, 217, .25);
+overflow: hidden;
+}
+.columns {
+background: rgba(12, 128, 217, .1);
+border-width: 0 1px;
+border-style: dashed;
+}
+.columns small {
+color: rgba(12, 128, 217, .5);
+font-size: 68.75%;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+border-bottom: 1px solid rgba(12, 128, 217, .1);
+display: block;
+padding: .4em;
+text-shadow: rgba(255,255,255, .5) 0 1px 0;
+}
+.l {
+border-bottom: 1px solid rgba(217, 12, 12, .25);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+/* Set your vertical rythm here */
+height: 1.5em; /* 24px */
+}
+.col {
+border: 1px solid;
+border-width: 0 1px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+float: left;
+height: 100%;
+/* Define column width and gutters here */
+width: 21.3%;
+margin-right: 3%;
+}
+.col:first-child {
+/* You'll need to set margin-left for the first column too */
+margin-left: 2.941176470588235%;
+}
+/* If you have issues with Firefox dropping the last column, apply this rule to the column before. */
+/* I know… this sucks! */
+.col:nth-child(3) { margin-right: 0; }
+.col:last-child {
+float: right;
+margin-right: 2.941176470588235%;
+}
+.hide { display: none; }
